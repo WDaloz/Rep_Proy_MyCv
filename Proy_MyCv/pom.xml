@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.daloz</groupId>
-  <artifactId>Proy_MyCv</artifactId>
-  <version>1.0</version>
-  <packaging>war</packaging>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.daloz</groupId>
+	<artifactId>Proy_MyCv</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
 
 	<properties>
 
@@ -19,7 +18,7 @@
 		<org.jasypt.version>1.9.2</org.jasypt.version>
 		<com.sun.faces.version>2.2.13</com.sun.faces.version>
 		<javax.servlet.version>4.0.0-b01</javax.servlet.version>
-
+		<com.thoughtworks.xstream.version>1.4.9</com.thoughtworks.xstream.version>
 	</properties>
 
 	<dependencies>
@@ -114,6 +113,13 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<version>${javax.servlet.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+			<version>${com.thoughtworks.xstream.version}</version>
+		</dependency>
+
 
 	</dependencies>
 

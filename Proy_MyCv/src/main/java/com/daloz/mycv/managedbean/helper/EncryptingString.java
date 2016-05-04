@@ -5,7 +5,7 @@ import org.jasypt.util.password.ConfigurablePasswordEncryptor;
 public class EncryptingString
 {
 	
-	public static String encriptPassword(String password, HashTypesEnum hashTypesEnum)
+	public static String encriptPassword(String password, HashTypes hashTypesEnum)
 	{
 		ConfigurablePasswordEncryptor configPassEncrypt = new ConfigurablePasswordEncryptor();
 		configPassEncrypt.setAlgorithm(hashTypesEnum.getDescription());

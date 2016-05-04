@@ -1,0 +1,36 @@
+header
+{
+	text-align: center;
+	font-size: 40px;
+	background-color: red;
+}
+
+
+.pintar-div
+{
+  background-color: #fafafa;
+}
+
+.quitar-float
+{
+	float: none;
+}
+
+
+body
+{
+	background-color: yellow;
+}
+
+legend
+{
+	text-align: center;
+}
+
+.hijo_dos {
+  background-color: yellow;
+  
+  /* IMPORTANTE */
+  width: 200px;
+  margin: 0 auto;
+}

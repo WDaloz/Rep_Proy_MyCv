@@ -9,19 +9,23 @@
 
 <h:head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link href="#{request.contextPath}/resources/css/bootstrap/bootstrap.min.css" rel="Stylesheet"  />
+<link href="#{request.contextPath}/resources/css/main.css"  rel="Stylesheet"/>
 <title>Login</title>
 </h:head>
 
 <h:body>
 
-<div align="center">
+  <header >Daloz</header>
+
+<div class="col-md-6 center-block pintar-div quitar-float">
    <h:form>
-   <legend>Login</legend>
+   <legend>Ingresar</legend>
    <fieldset>
    <h:panelGrid columns="2">
    
-   <h:outputLabel for="txtName" value="Name" />
-   <h:inputText value="#{securityManagedBean.userDTO.name}"  a:title="Se necesita el Nombre" a:required="requerid" a:maxlength="5"  id="txtName">
+   <h:outputLabel class="hijo_dos" for="txtName" value="Name" />
+   <h:inputText value="#{securityManagedBean.userDTO.name}"  a:title="Se necesita el Nombre" a:required="requerid" a:maxlength="10"  id="txtName">
    </h:inputText>
    
    <h:outputLabel for="txtPassword" value="password" />

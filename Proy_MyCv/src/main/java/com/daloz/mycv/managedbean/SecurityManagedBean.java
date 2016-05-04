@@ -8,7 +8,7 @@ import javax.faces.component.UIComponent;
 
 import com.daloz.mycv.domain.UserDTO;
 import static com.daloz.mycv.managedbean.helper.EncryptingString.*;
-import static com.daloz.mycv.managedbean.helper.HashTypesEnum.*;
+import static com.daloz.mycv.managedbean.helper.HashTypes.*;
 import static com.daloz.mycv.managedbean.helper.SpringUtil.*;
 import com.daloz.mycv.service.ISecurityService;
 
@@ -26,7 +26,6 @@ public class SecurityManagedBean extends GenericManagedBean
 	public void init()
 	{
 		iSecurityService = getSpringBean("iSecurityService");
-
 		setLogger(SecurityManagedBean.class);
 	}
 
@@ -35,12 +34,10 @@ public class SecurityManagedBean extends GenericManagedBean
 		userDTO.setPassword(encriptPassword(userDTO.getPassword(), SHA_512));
 		UserDTO userValidate = iSecurityService.validateUser(userDTO);
 
-		userDTO = new UserDTO();
-
 		if (userValidate != null)
 		{
+			logger.info("Validación exitosa: "+userValidate.getEmployeeDTO().getStringFromMutableObject());
 			setAttributeSession("user", userValidate);
-			getLogger().info(userValidate.getStringFromMutableObject());
 			return getView("main");
 		}
 		addMessage(btnLogin, "Error con los datos");

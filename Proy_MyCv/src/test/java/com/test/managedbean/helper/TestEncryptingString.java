@@ -5,7 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.daloz.mycv.managedbean.helper.EncryptingString;
-import static com.daloz.mycv.managedbean.helper.HashTypesEnum.*;
+import static com.daloz.mycv.managedbean.helper.HashTypes.*;
 
 public class TestEncryptingString
 {
@@ -16,8 +16,6 @@ public class TestEncryptingString
 	public static void beforeClass()
 	{
 		logger = Logger.getLogger(TestEncryptingString.class);
-		
-		logger.info("Iniciando");
 	}
 
 	@Test

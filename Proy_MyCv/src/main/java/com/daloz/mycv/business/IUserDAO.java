@@ -9,7 +9,8 @@ import com.daloz.mycv.domain.UserDTO;
  * @author Mandraque
  * @version 1.0
  */
-public interface IUserDAO extends IGenericDAO<UserDTO>
+public interface IUserDAO
 {
 	UserDTO validateUser(UserDTO userDTO);
+	Boolean changePassword(UserDTO _userDTO);
 }

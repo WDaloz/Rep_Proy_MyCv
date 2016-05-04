@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 
 public class GenericManagedBean
 {
-	private  Logger logger = null;
+	protected  Logger logger = null;
 
 	public String getView(String... arg)
 	{
@@ -60,8 +60,4 @@ public class GenericManagedBean
 		logger = Logger.getLogger(clazz);
 	}
 
-	public  Logger getLogger()
-	{
-		return logger;
-	}
 }
