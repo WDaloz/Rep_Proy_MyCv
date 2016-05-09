@@ -51,7 +51,7 @@ public class TestCreateXml
 		writerEntity = new WriterEntity();
 		writerEntity.setObjective(userDTO);
 		writerEntity.setObjectiveClass(UserDTO.class);
-		writerEntity.setPath("src/main/resources/data/UserDTO.xml");
+		writerEntity.setPath("src/test/resources/data/output/UserDTO.xml");
 		
 		fResponse = iFileManager.writeFile(writerEntity);
 		
@@ -66,7 +66,7 @@ public class TestCreateXml
 	public void testReadeXml()
 	{
 		readerEntity = new ReaderEntity();
-		readerEntity.setPath("src/main/resources/data/UserDTO.xml");
+		readerEntity.setPath("src/test/resources/data/output/UserDTO.xml");
 		readerEntity.setClassTarget(UserDTO.class);
 		
 		fResponse = iFileManager.readFile(readerEntity);
