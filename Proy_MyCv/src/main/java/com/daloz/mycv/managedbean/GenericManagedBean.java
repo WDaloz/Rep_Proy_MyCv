@@ -17,10 +17,10 @@ public class GenericManagedBean
 	{
 		if (arg.length == 1)
 		{
-			return "/pages/" + arg[0] + ".xhtml?faces-redirect=true";
+			return "/pagesadm/" + arg[0] + ".xhtml?faces-redirect=true";
 		} else
 		{
-			return "/pages/" + arg[0] + "/" + arg[1] + ".xhtml?faces-redirect=true";
+			return "/pagesadm/" + arg[0] + "/" + arg[1] + ".xhtml?faces-redirect=true";
 		}
 	}
 

@@ -1,5 +1,6 @@
 package com.daloz.mycv.domain;
 
+
 import java.io.Serializable;
 
 import com.daloz.mycv.domain.helper.ITextMutableObject;
@@ -8,10 +9,9 @@ import com.daloz.mycv.domain.helper.ITextMutableObject;
 public class UserDTO implements Serializable, ITextMutableObject
 {
 
-	
 	private EmployeeDTO employeeDTO = new EmployeeDTO();
 
-	private String code, name, password;
+	private String name, password;
 	private Boolean status;
 
 	// get - set
@@ -23,16 +23,6 @@ public class UserDTO implements Serializable, ITextMutableObject
 	public void setEmployeeDTO(EmployeeDTO employeeDTO)
 	{
 		this.employeeDTO = employeeDTO;
-	}
-
-	public String getCode()
-	{
-		return code;
-	}
-
-	public void setCode(String code)
-	{
-		this.code = code;
 	}
 
 	public String getName()

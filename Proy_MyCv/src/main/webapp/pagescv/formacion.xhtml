@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:j="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+
+
+<ui:composition template="/pagescv/template/basicTemplate.xhtml">
+	<ui:define name="content">
+
+		<section>
+
+		<div id="textPr">
+
+			<hgroup>
+			<h1>Educacion</h1>
+			</hgroup>
+			<h:dataTable value="#{mainManagedBean.employeeDTO.educationDTOs}"
+				var="e" >
+				<h:column>
+					<p>
+						<h:outputText value="#{e.startDate}">
+							<f:convertDateTime pattern="yyyy" type="date" />
+						</h:outputText>
+						-
+						<h:outputText value="#{e.endDate}">
+							<f:convertDateTime pattern="yyyy" type="date" />
+						</h:outputText>
+					</p>
+					<p>.</p>
+					<p>.</p>
+					<p>.</p>
+				</h:column>
+				<h:column>
+					<p>#{e.name}</p>
+					<p>#{e.profession}</p>
+					<p>#{e.grade}</p>
+					<p>#{e.location}</p>
+				</h:column>
+			</h:dataTable>
+		</div>
+
+
+
+		</section>
+
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,38 @@
+<aside>
+		<img src="#{request.contextPath}/img/foto.jpg" />
+
+	<div id="divContactos">
+		<hr />
+		<hgroup>
+			<h1>Contactos</h1>
+		</hgroup>
+		<hr />
+
+		<p>E-mail: #{mainManagedBean.employeeDTO.email}</p>
+		<p>Fono: #{mainManagedBean.employeeDTO.phone}</p>
+		<p>Celular: #{mainManagedBean.employeeDTO.cellPhone}</p>
+	</div>
+
+	<div id="divRedesSociales">
+		<hr />
+		<hgroup>
+			<h1>Redes Sociales</h1>
+		</hgroup>
+		<hr />
+
+		<table>
+			<tr>
+				<td><a target="_blank" href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[0].link}"><img class ="img-red-social"
+						src="#{request.contextPath}/img/#{mainManagedBean.employeeDTO.socialNetworkDTOs[0].path}" />
+					</a>
+				</td>
+				<td><a target="_blank" href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[1].link}"><img class ="img-red-social"
+						src="#{request.contextPath}/img/#{mainManagedBean.employeeDTO.socialNetworkDTOs[1].path}" />
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+</aside>

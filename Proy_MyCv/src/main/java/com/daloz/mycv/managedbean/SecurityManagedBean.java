@@ -27,16 +27,18 @@ public class SecurityManagedBean extends GenericManagedBean
 	{
 		iSecurityService = getSpringBean("iSecurityService");
 		setLogger(SecurityManagedBean.class);
+
 	}
 
 	public String validateLogin()
 	{
+
 		userDTO.setPassword(encriptPassword(userDTO.getPassword(), SHA_512));
 		UserDTO userValidate = iSecurityService.validateUser(userDTO);
 
 		if (userValidate != null)
 		{
-			logger.info("Validación exitosa: "+userValidate.getEmployeeDTO().getStringFromMutableObject());
+			logger.info(userValidate.getEmployeeDTO().getStringFromMutableObject());
 			setAttributeSession("user", userValidate);
 			return getView("main");
 		}

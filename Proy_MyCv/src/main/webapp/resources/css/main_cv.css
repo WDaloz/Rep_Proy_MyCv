@@ -1,0 +1,94 @@
+body
+{
+	background:
+		url("http://www.galaxiastudio.com/wp-content/uploads/2014/03/2252.jpg")
+		#FF9000;
+}
+
+#content
+{
+ width: 1000px;
+ margin: 0 auto;
+}
+
+header
+{
+  background-color: yellow;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+aside
+{
+ width: 220px;
+ height:500px;
+ background-color: red;
+ float: left;
+}
+
+nav
+{
+ background-color: blue;
+ text-align: left;
+ height: 60px;
+}
+
+nav ul li
+{
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+
+nav ul li a
+{
+ text-decoration: none;
+ color: orange;
+}
+
+#textPr
+{
+ background-color:white;
+ width:780px;
+ float: right;
+}
+
+img
+{
+ width: 220px;
+ height: 200px;
+ padding: 5px;
+}
+
+#divContactos
+{
+ width: 220px;
+ height: auto;;
+ margin-top:20px;
+ background-color: orange;
+}
+
+#divRedesSociales
+{
+ width: 220px;
+ height: auto;
+ background-color: green; 
+}
+
+.img-red-social
+{
+ width: 110px;
+ height: auto;
+}
+
+article
+{
+ padding: 10px;
+}
+
+
+
+

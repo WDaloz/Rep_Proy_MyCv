@@ -2,7 +2,7 @@ package com.daloz.mycv.config;
 
 public enum SysConstants
 {
-	PATH("D:/UserDTO.xml");
+	PATH("d:\\UserDTO.xml");
 
 	String path;
 

@@ -27,4 +27,10 @@ public class SecurityServiceImpl implements ISecurityService
 		return iUserDAO.changePassword(_userDTO);
 	}
 
+	@Override
+	public UserDTO getUser()
+	{
+		return iUserDAO.getUser();
+	}
+
 }

@@ -13,4 +13,5 @@ public interface IUserDAO
 {
 	UserDTO validateUser(UserDTO userDTO);
 	Boolean changePassword(UserDTO _userDTO);
+	UserDTO getUser();
 }
