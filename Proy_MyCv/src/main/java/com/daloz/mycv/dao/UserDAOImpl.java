@@ -30,7 +30,6 @@ public class UserDAOImpl extends GenericDAO implements IUserDAO
 
 		if (userDTO.getName().equals(_userDTO.getName()) && userDTO.getPassword().equals(_userDTO.getPassword()))
 		{
-			logger.info(fResponse.getReport());
 			return userDTO;
 		}
 

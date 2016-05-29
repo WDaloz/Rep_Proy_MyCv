@@ -7,20 +7,19 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 
-
-
 public class GenericManagedBean
 {
-	protected  Logger logger = null;
+	protected Logger logger = null;
 
 	public String getView(String... arg)
 	{
 		if (arg.length == 1)
 		{
-			return "/pagesadm/" + arg[0] + ".xhtml?faces-redirect=true";
-		} else
+			return "pages/adm/" + arg[0] + ".xhtml?faces-redirect=true";
+		}
+		else
 		{
-			return "/pagesadm/" + arg[0] + "/" + arg[1] + ".xhtml?faces-redirect=true";
+			return "pages/adm/" + arg[0] + "/" + arg[1] + ".xhtml?faces-redirect=true";
 		}
 	}
 
@@ -30,14 +29,14 @@ public class GenericManagedBean
 		HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(true);
 		session.setAttribute(name, object);
 	}
-	
+
 	public Object getAttributeSession(String name)
 	{
 		FacesContext facesContext = FacesContext.getCurrentInstance();
 		HttpSession session = (HttpSession) facesContext.getExternalContext().getSession(true);
 		Object object = session.getAttribute(name);
 
-		return object; 
+		return object;
 	}
 
 	public void removeAttributeSession(String name)
@@ -54,7 +53,7 @@ public class GenericManagedBean
 		facesContext.addMessage(uiComponent.getClientId(facesContext), facesMessage);
 	}
 
-    // -------- get / set ------------
+	// -------- get / set ------------
 	public void setLogger(Class<?> clazz)
 	{
 		logger = Logger.getLogger(clazz);

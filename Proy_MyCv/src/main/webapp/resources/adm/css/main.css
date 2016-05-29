@@ -1,0 +1,161 @@
+body
+{
+	background:
+		url("http://www.galaxiastudio.com/wp-content/uploads/2014/03/2252.jpg")
+		#FF9000;
+}
+
+header
+{
+ background-color: yellow;
+ width: 100%;
+ height: 100px;
+}
+
+nav
+{
+ width: 220px;
+ height:auto;
+ background-color: #0077A1;
+ float: left;
+
+}
+
+#main
+{
+ width: 1000px;
+ margin: 0 auto;
+}
+
+#txtPr
+{
+ background-color: #47C1ED;
+ width:760px;
+ height:auto;
+ float: right;
+ border-radius:10px;
+ padding:10px;
+}
+
+/* #content */
+/* { */
+/* 	margin: 0 auto; */
+/* 	width: 960px; */
+/* 	text-align: center; */
+/* } */
+
+/* #loginForm  */
+/* { */
+/* 	width: 350px; */
+/* 	padding: 40px 30px; */
+/* 	background: rgba(235, 235, 205, 0.7); */
+/* 	border-radius: 4px; */
+/* 	-moz-border-radius: 4px; */
+/* 	-webkit-border-radius: 4px; */
+/* 	margin: 50px auto; */
+/* } */
+
+/* .form-control */
+/* { */
+/*   width:100%; */
+/*   height:50px; */
+/*   border:none; */
+/*   padding:5px 7px 5px 15px; */
+/*   background:#fff; */
+/*   color:#666; */
+/*   border:2px solid #E0D68F; */
+/*   border-radius:4px; */
+/*   -moz-border-radius:4px; */
+/*   -webkit-border-radius:4px; */
+/* } */
+
+/* .btn-login */
+/* { */
+/*   background:#0AC986; */
+/*   dispaly:inline-block; */
+/*   width:100%; */
+/*   font-size:16px; */
+/*   height:50px; */
+/*   color:#fff; */
+/*   text-decoration:none; */
+/*   border:none; */
+/*   border-radius:4px; */
+/*   -moz-border-radius:4px; */
+/*   -webkit-border-radius:4px; */
+/* } */
+
+/* h1 */
+/* { */
+/*   color:#AAA173; */
+/*   text-align:center; */
+/*   font-faimly:icon; */
+/* } */
+
+/* /* h1 */ */
+/* /* { */ */
+/* /* 	color: #e44e2d; */ */
+/* /* } */ */
+
+/* /* #textPr */ */
+/* /* { */ */
+/* /* 	background-color:#1d1d1d; */ */
+/* /* 	color:#ff0000; */ */
+
+/* /* 	width: 600px; */ */
+/* /* 	height: 320px; */ */
+/* /* 	margin: 0 auto; */ */
+
+/* /* 	text-align:left; */ */
+
+/* /* 	border-radius:20px; */ */
+/* /* 	padding: 20px; */ */
+
+/* /* 	box-shadow:0px 0px rgba(0, 0, 0, 0.5); */ */
+/* /* } */ */
+
+/* /* form */ */
+/* /* { */ */
+/* /* 	padding:10px; */ */
+/* /*     cursor:pointer; */ */
+/* /*     width:300px; */ */
+/* /*     margin: 0 auto; */ */
+
+/* /* } */ */
+
+/* /* footer */ */
+/* /* { */ */
+/* /* 	background-color: #E86E0C; */ */
+/* /* 	width: 960px; */ */
+/* /* 	height: 40px; */ */
+
+/* /* 	margin: 0 auto; */ */
+/* /* } */ */
+
+/* /* nav */ */
+/* /* { */ */
+/* /* 	background-color: white; */ */
+/* /* 	float:left; */ */
+/* /* 	font-size: 20px; */ */
+/* /* } */ */
+
+/* /* .pintar-div */ */
+/* /* { */ */
+/* /*   background-color: #fafafa; */ */
+/* /* } */ */
+
+/* /* .quitar-float */ */
+/* /* { */ */
+/* /* 	float: none; */ */
+/* /* } */ */
+/* legend { */
+/* 	text-align: center; */
+/* 	color: red; */
+/* } */
+
+/* /* .hijo_dos { */ */
+/* /*   background-color: yellow; */ */
+
+/* /*   IMPORTANTE */ */
+/* /*   width: 200px; */ */
+/* /*   margin: 0 auto; */ */
+/* /* } */ */

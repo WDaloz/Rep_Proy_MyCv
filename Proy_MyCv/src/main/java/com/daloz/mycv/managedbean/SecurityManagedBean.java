@@ -38,12 +38,13 @@ public class SecurityManagedBean extends GenericManagedBean
 
 		if (userValidate != null)
 		{
-			logger.info(userValidate.getEmployeeDTO().getStringFromMutableObject());
 			setAttributeSession("user", userValidate);
-			return getView("main");
+			
+			return "main.xhtml";
 		}
 		addMessage(btnLogin, "Error con los datos");
-		return getView("cliente", "listar");
+		
+		return "login.xhtml";
 	}
 
 	public UserDTO getUserDTO()

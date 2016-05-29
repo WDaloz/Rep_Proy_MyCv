@@ -16,8 +16,8 @@
 		<path>D:\foto.jpg</path>
 		<educationDTOs>
 			<com.daloz.mycv.domain.EducationDTO>
-				<startDate>2016-05-17 01:35:25.910 UTC</startDate>
-				<endDate>2016-05-17 01:35:25.910 UTC</endDate>
+				<startDate>2016-05-17 20:01:59.363 UTC</startDate>
+				<endDate>2016-05-17 20:01:59.363 UTC</endDate>
 				<name>CIBERTEC</name>
 				<profession>Desarrollador Java</profession>
 				<grade>Tecnico</grade>
@@ -55,13 +55,22 @@
 				<name>Spring</name>
 				<descripcion>Aprender a manejar</descripcion>
 				<location>Lima - Peru</location>
-				<starDate>2016-05-17 01:35:25.915 UTC</starDate>
-				<endDate>2016-05-17 01:35:25.915 UTC</endDate>
+				<starDate>2016-05-17 20:01:59.366 UTC</starDate>
+				<endDate>2016-05-17 20:01:59.366 UTC</endDate>
 				<contents>
 					<string>-Spring</string>
 				</contents>
 			</com.daloz.mycv.domain.CourseDTO>
 		</courseDTOs>
+		<workExperienceDTOs>
+			<com.daloz.mycv.domain.WorkExperienceDTO>
+				<startDate>2016-05-17 20:01:59.371 UTC</startDate>
+				<endDate>2016-05-17 20:01:59.371 UTC</endDate>
+				<companyName>GORA SAC</companyName>
+				<position>Consultor junior</position>
+				<description>No se que hacia</description>
+			</com.daloz.mycv.domain.WorkExperienceDTO>
+		</workExperienceDTOs>
 		<skillDTO>
 			<patterns>
 				<string>Mvc</string>

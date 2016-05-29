@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:j="http://java.sun.com/jsp/jstl/core"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<link
+		href="#{request.contextPath}/resources/css/bootstrap/bootstrap.min.css"
+		rel="Stylesheet" />
+	<link href="#{request.contextPath}/resources/css/main.css"
+		rel="Stylesheet" />
+
+	<script src="#{request.contextPath}/resources/myjs/login.js"
+		language="javascript"></script>
+
+	<title>Login</title>
+
+
+</h:head>
+
+<h:body>
+
+	<div id="content">
+
+		<section>
+
+		<div id="textPr">
+
+			<h:form id="loginForm">
+				<hgroup>
+				<h1>Ingresar</h1>
+				</hgroup>
+				<fieldset>
+					<h:panelGrid columns="2">
+
+						<h:inputText id="txtName" class="form-control"
+							value="#{securityManagedBean.userDTO.name}"
+							a:title="Se necesita el Nombre" a:required="requerid"
+							a:maxlength="10" a:placeholder="Username" />
+
+						<h:inputSecret id="txtPassword" class="form-control"
+							value="#{securityManagedBean.userDTO.password}"
+							a:title="Se necesita el contrase&ntilde;a" a:required="requerid"
+							a:placeholder="Password" />
+
+					</h:panelGrid>
+
+					<h:commandButton class="btn-login"
+						binding="#{securityManagedBean.btnLogin}" id="btnLogin"
+						value="login" action="#{securityManagedBean.validateLogin}">
+
+						<f:ajax execute="@form" render="@form" />
+
+					</h:commandButton>
+					<div>
+						<h:message for="btnLogin" style="color:red;"></h:message>
+					</div>
+				</fieldset>
+			</h:form>
+
+
+
+		</div>
+
+		</section>
+
+	</div>
+</h:body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" 
+    xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsp/jstl/core"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+	
+	<link href="#{request.contextPath}/resources/css/main_cv.css" rel="Stylesheet" />
+	<link href="#{request.contextPath}/resources/css/bootstrap/bootstrap.min.css"  rel="Stylesheet"/>
+	
+	<title>MyCv</title>
+	
+</h:head>
+<h:body>
+	<div id="main">
+	
+		<ui:insert name="header">
+			<ui:include src="header.xhtml" />
+		</ui:insert>
+
+
+		<ui:insert name="nav">
+			<ui:include src="nav.xhtml" />
+		</ui:insert>
+
+		<ui:insert name="aside">
+			<ui:include src="aside.xhtml" />
+		</ui:insert>
+		
+		<ui:insert name="content" />
+
+	</div>
+
+	<ui:insert name="footer">
+		<ui:include src="footer.xhtml" />
+	</ui:insert>
+	
+</h:body>
+</html>

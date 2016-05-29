@@ -30,6 +30,7 @@ import com.daloz.mycv.domain.SkillDTO;
 import com.daloz.mycv.domain.SocialNetworkDTO;
 import com.daloz.mycv.domain.ToolDTO;
 import com.daloz.mycv.domain.UserDTO;
+import com.daloz.mycv.domain.WorkExperienceDTO;
 import com.daloz.mycv.managedbean.helper.EncryptingString;
 import com.daloz.mycv.managedbean.helper.HashTypes;
 
@@ -175,6 +176,14 @@ public class TestCreateXml
 		skillDTO.setFrameworkDTOs(frameworkDTOs);
 		skillDTO.setDataBaseDTOs(dataBaseDTOs);
 		
+		WorkExperienceDTO workExperienceDTO = new WorkExperienceDTO();
+		workExperienceDTO.setStartDate(new Date());
+		workExperienceDTO.setEndDate(new Date());
+		workExperienceDTO.setCompanyName("GORA SAC");
+		workExperienceDTO.setPosition("Consultor junior");
+		workExperienceDTO.setDescription("No se que hacia");
+		
+		List<WorkExperienceDTO> workExperienceDTOs = new ArrayList<>(Arrays.asList(workExperienceDTO));
 		
 		EmployeeDTO employeeDTO = new EmployeeDTO();
 		employeeDTO.setName("Cristhian");
@@ -194,6 +203,7 @@ public class TestCreateXml
 		employeeDTO.setSocialNetworkDTOs(socialNetworkDTOs);
 		employeeDTO.setCourseDTOs(courseDTOs);
 		employeeDTO.setSkillDTO(skillDTO);
+		employeeDTO.setWorkExperienceDTOs(workExperienceDTOs);
 		
 		UserDTO userDTO = new UserDTO();
 		userDTO.setEmployeeDTO(employeeDTO);

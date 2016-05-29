@@ -1,0 +1,113 @@
+body
+{
+	background:url("http://www.galaxiastudio.com/wp-content/uploads/2014/03/2252.jpg")#FF9000;		
+}
+
+header
+{
+  background-color: #00AFED;
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+  text-align: left;
+  border-radius:10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+nav
+{
+ background-color: #3590B1;
+ text-align: left;
+ height: 60px;
+ border-radius:10px;
+ padding: 15px;
+}
+
+aside
+{
+ width: 220px;
+ height:auto;
+ background-color: #0077A1;
+ float: left;
+ border-radius:10px;
+ padding: 5px;
+}
+
+/** Maquetacion**/
+
+#main
+{
+ width: 1000px;
+ margin: 0 auto;
+ text-align: left;
+}
+
+h1
+{
+ color: #e44e2d;
+}
+
+nav ul li
+{
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  padding: 5px;
+  
+  transition:all 0.5s linear;
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  
+}
+
+nav ul li a 
+{
+ text-decoration: none;
+ color: orange;
+ font-family: "Helvetica",arial;
+ font-size: 20px;
+}
+
+nav ul li:HOVER
+{
+  background-color: white;
+  color: #e44e2d;
+  border-radius:5px;  
+}
+
+#textPr
+{
+ background-color: #47C1ED;
+ width:780px;
+ height:auto;
+ float: right;
+ border-radius:10px;
+ padding:10px;
+}
+
+
+.cv-foto
+{
+ width: 210px;
+ height: 200px;
+ padding: 5px;
+}
+
+.style-aside
+{
+ width: 210px;
+ height: auto; 
+}
+
+
+.img-red-social
+{
+ width: 105px;
+ height: auto;
+}
+
+
+
+
