@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 300;
 }
 
-.wrapper {
+.wrapper 
+{
     display: block;
     width: 100%;
     overflow: hidden;
@@ -1187,16 +1188,19 @@ ul.about {
     z-index: 1;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) 
+{
 
-    .widget-profil #profile_social a{ 
+    .widget-profil #profile_social a
+    { 
         width: 45px;	
         height: 45px;	
         line-height: 45px;	
         font-size: 24px;	
     }
-    .widget-profil h1 {
-        font-size: 25px;
+    .widget-profil h1 
+    {
+        font-size: 20px;
         line-height: 60px;
     }
 }
