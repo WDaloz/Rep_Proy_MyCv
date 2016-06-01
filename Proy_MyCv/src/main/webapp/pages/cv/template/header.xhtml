@@ -8,7 +8,8 @@
 				<div class="image-holder one" id="pic_prof_1" style="display: none">
 
 					<img class="head-image up circle" src="http://placehold.it/150x150"
-						width="150" height="150" alt="" /> <img
+						width="150" height="150" alt="" /> 
+					<img
 						class="head-image up-left circle"
 						src="http://placehold.it/150x150" width="150" height="150" alt="" />
 					<img class="head-image left circle"
@@ -29,7 +30,10 @@
 				</div>
 
 				<!-- style for simple image profile -->
-				<div class="circle-img" id="pic_prof_2"></div>
+				<div  id="pic_prof_2">
+				<img class="circle-img"
+						src="#{request.contextPath}/resources/cv/images/profilePhoto/foto.jpg" width="150" height="150" alt="" />
+				</div>
 
 			</div>
 			<!-- End Profile Image -->
@@ -38,8 +42,10 @@
 
 				<!-- Profile info -->
 				<div id="profile_info">
-					<h1 id="name" class="transition-02">cristhian paraguay</h1>
-					<h4 class="line">GRAPHIC &amp; WEB DESIGNER</h4>
+					<hgroup>
+					<h1 id="name" class="transition-02">#{mainManagedBean.employeeDTO.fullName}</h1>
+					</hgroup>
+					<h4 class="line">#{mainManagedBean.employeeDTO.description}</h4>
 					<h6>
 						<span class="fa fa-map-marker"></span> San Francisco , CA
 					</h6>
@@ -49,17 +55,17 @@
 
 				<!-- Profile Description -->
 				<div id="profile_desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Nullam ac risus nibh. Donec adipiscing luctus tur</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+					<p>
+					#{mainManagedBean.employeeDTO.profile}
+					</p>
 				</div>
 				<!-- End Profile Description -->
 
 
 				<!-- Name -->
 				<div id="profile_social">
-					<h6>My Social Profiles</h6>
-					<a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+					<h6>Mis Redes Sociales</h6>
+					<a href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[0].link}" target="_blank"><i class="fa fa-facebook"></i></a> <a href="#"><i
 						class="fa fa-twitter"></i></a> <a href="#"><i
 						class="fa fa-linkedin"></i></a> <a href="#"><i
 						class="fa fa fa-dribbble"></i></a> <a href="#"><i

@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.daloz.mycv.domain.helper.ITextMutableObject;
 
+@SuppressWarnings("serial")
 public class SkillDTO implements Serializable, ITextMutableObject
 {
 

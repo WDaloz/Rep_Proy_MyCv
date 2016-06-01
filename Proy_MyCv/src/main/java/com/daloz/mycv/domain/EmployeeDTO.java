@@ -9,7 +9,8 @@ import com.daloz.mycv.domain.helper.ITextMutableObject;
 @SuppressWarnings("serial")
 public class EmployeeDTO implements Serializable, ITextMutableObject
 {
-	private String name, lastName, maidenName, description, profile, email, phone, cellPhone, path;
+	@SuppressWarnings("unused")
+	private String name, lastName, maidenName, fullName, description, profile, email, phone, cellPhone, path;
 
 	private List<EducationDTO> educationDTOs = new ArrayList<>();
 	private List<IdiomDTO> idiomDTOs = new ArrayList<>();
@@ -134,6 +135,11 @@ public class EmployeeDTO implements Serializable, ITextMutableObject
 	public void setCellPhone(String cellPhone)
 	{
 		this.cellPhone = cellPhone;
+	}
+	
+	public String getFullName()
+	{
+		return fullName = name.concat(" ".concat(lastName).concat(" ".concat(maidenName)));
 	}
 
 	public String getPath()

@@ -1,52 +1,273 @@
-<?xml version="1.0" encoding="ISO-8859-1" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:j="http://java.sun.com/jsp/jstl/core"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<!-- .portfolio -->
+									<div id="portfolio" class="content_2">
+										<!-- .title -->
+										<h1 class="h-bloc">Portfolio - My Works</h1>
+
+										<!-- .container-portfolio -->
+										<div class="container-portfolio">
+
+											<!-- #filters -->
+											<ul id="filters" class="clearfix">
+												<li><span class="filter active"
+													data-filter="catWeb catGraphic catMotion logo">All</span></li>
+												<li><span class="filter" data-filter="catWeb">Web
+														Design</span></li>
+												<li><span class="filter" data-filter="catGraphic">Graphic
+														Design</span></li>
+												<li><span class="filter" data-filter="catMotion">Motion
+														Graphic</span></li>
+												<li><span class="filter" data-filter="logo">Logo</span></li>
+											</ul>
+											<!-- /#filters -->
+
+											<!-- #portfoliolist -->
+											<div id="portfoliolist">
 
 
-<ui:composition template="/pages/cv/template/basicTemplate.xhtml">
-	<ui:define name="content">
+												<div class="view view-first portfolio logo" data-cat="logo">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
 
-		<section>
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a>
 
-		<div id="textPr">
+													</div>
+												</div>
 
-			<hgroup>
-			<h1>Educacion</h1>
-			</hgroup>
-			<h:dataTable value="#{mainManagedBean.employeeDTO.educationDTOs}"
-				var="e" >
-				<h:column>
-					<p>
-						<h:outputText value="#{e.startDate}">
-							<f:convertDateTime pattern="yyyy" type="date" />
-						</h:outputText>
-						-
-						<h:outputText value="#{e.endDate}">
-							<f:convertDateTime pattern="yyyy" type="date" />
-						</h:outputText>
-					</p>
-					<p>.</p>
-					<p>.</p>
-					<p>.</p>
-				</h:column>
-				<h:column>
-					<p>#{e.name}</p>
-					<p>#{e.profession}</p>
-					<p>#{e.grade}</p>
-					<p>#{e.location}</p>
-				</h:column>
-			</h:dataTable>
-		</div>
+												<div class="view view-first portfolio catWeb"
+													data-cat="catWeb">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY"
+															rel="portfolio" class="info external"><i
+															class="fa fa-play"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catWeb"
+													data-cat="catWeb">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a
+															href="http://themeforest.net/item/flexyvcard-responsive-vcard-template-/7158750?WT.ac=solid_search_thumb&amp;WT.seg_1=solid_search_thumb&amp;WT.z_author=flexycodes?width=800&amp;height=500&amp;iframe=true"
+															rel="portfolio" class="info external"> <i
+															class="fa fa-link"></i>
+														</a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catMotion"
+													data-cat="catMotion">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a
+															href="http://themeforest.net/?width=800&amp;height=500&amp;iframe=true"
+															rel="portfolio" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catWeb"
+													data-cat="catWeb">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://vimeo.com/7449107" rel="portfolio"
+															class="info external"><i class="fa fa-play"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catMotion"
+													data-cat="catMotion">
+
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catGraphic"
+													data-cat="catGraphic">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio logo" data-cat="logo">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catWeb"
+													data-cat="catWeb">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catGraphic"
+													data-cat="catGraphic">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio logo" data-cat="logo">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio logo" data-cat="logo">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															target="_blank" class="info open-imag"> <i
+															class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															class="info external"><i class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catGraphic"
+													data-cat="catGraphic">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio logo" data-cat="logo">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a
+															href="http://themeforest.net/user/flexycodes/portfolio"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
+
+												<div class="view view-first portfolio catGraphic"
+													data-cat="catGraphic">
+													<img src="http://placehold.it/220x165" />
+													<div class="mask">
+														<h2>Project Name</h2>
+														<p>A wonderful serenity has taken possession of my
+															entire soul.</p>
+
+														<a href="http://placehold.it/600x849" rel="portfolio"
+															class="info open-imag"> <i class="fa fa-search"></i>
+														</a> <a href="http://themeforest.net/user/flexycodes"
+															target="_blank" class="info external"><i
+															class="fa fa-link"></i></a>
+													</div>
+												</div>
 
 
+												<div class="clear"></div>
 
-		</section>
-
-	</ui:define>
-</ui:composition>
-</html>
+											</div>
+											<!-- #images/portfoliolist -->
+										</div>
+										<!-- /.container-portfolio -->
+									</div>
+									<!-- End .portfolio -->

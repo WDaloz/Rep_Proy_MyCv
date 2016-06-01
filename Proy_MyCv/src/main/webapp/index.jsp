@@ -1,1 +1,1 @@
-<jsp:forward page="pages/cv/inicio.xhtml"/>
+<jsp:forward page="pages/cv/main.xhtml"/>

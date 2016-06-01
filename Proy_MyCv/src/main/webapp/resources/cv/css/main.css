@@ -1200,7 +1200,7 @@ ul.about {
     }
     .widget-profil h1 
     {
-        font-size: 20px;
+        font-size: 15px;
         line-height: 60px;
     }
 }
@@ -1447,7 +1447,7 @@ ul.about {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 11px;
+    font-size: 17px;
     color: #fff;
     text-transform: capitalize;
 }
@@ -1466,7 +1466,7 @@ ul.about {
     position: absolute;
     right: 10px;
     top: 0;
-    font-size: 11px;
+    font-size: 17px;
     height: 22px;
     line-height: 22px;/*35*/
     color: #444;
@@ -2570,7 +2570,7 @@ ul.info-post li {
     }
 
     .attributes h5 {
-        font-size: 13px;
+        font-size: 15px;
     }
     .text_content {
         font-size: 10px;
@@ -3013,5 +3013,30 @@ div.ppt {
 
 #contact #profile_social {
 	display: block !important;
+}
+
+.experiencia-title
+{
+ font-size:15px;
+ font-family: 'Lato', sans-serif;
+ font-weight: 400 !important;
+ padding-bottom: 10px;
+ border-bottom: 1px solid #3B5998;
+}
+
+.color-calendar
+{
+ float: right;
+ color: #3B5998;
+}
+
+.color-calendar i
+{
+  margin-right: 10px;
+}
+
+.name-company
+{
+ font-size: 13px;
 }
 
