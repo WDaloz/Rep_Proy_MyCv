@@ -1144,6 +1144,7 @@ ul.about {
     padding-top: 15px;
 }
 
+
 #profile_social a{
     width: 45px;
     height: 45px;
@@ -1200,7 +1201,7 @@ ul.about {
     }
     .widget-profil h1 
     {
-        font-size: 15px;
+        font-size: 23.7px;
         line-height: 60px;
     }
 }
@@ -3040,3 +3041,24 @@ div.ppt {
  font-size: 13px;
 }
 
+.location
+{
+ float: right;
+}
+
+.formacion-curso-contenido
+{
+ margin-left: 10px;
+}
+
+.printButton
+{
+    background: rgba(45, 57, 63, 0.8);
+    display: block;
+    padding: 17px !important;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}

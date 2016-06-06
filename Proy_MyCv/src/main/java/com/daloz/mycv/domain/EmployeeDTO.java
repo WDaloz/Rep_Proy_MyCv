@@ -10,7 +10,7 @@ import com.daloz.mycv.domain.helper.ITextMutableObject;
 public class EmployeeDTO implements Serializable, ITextMutableObject
 {
 	@SuppressWarnings("unused")
-	private String name, lastName, maidenName, fullName, description, profile, email, phone, cellPhone, path;
+	private String name, lastName, maidenName, fullName, address, description, profile, email, phone, cellPhone, path;
 
 	private List<EducationDTO> educationDTOs = new ArrayList<>();
 	private List<IdiomDTO> idiomDTOs = new ArrayList<>();
@@ -198,4 +198,15 @@ public class EmployeeDTO implements Serializable, ITextMutableObject
 		this.workExperienceDTOs = workExperienceDTOs;
 	}
 
+	public String getAddress()
+	{
+		return address;
+	}
+
+	public void setAddress(String address)
+	{
+		this.address = address;
+	}
+	
+	
 }

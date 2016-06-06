@@ -20,7 +20,7 @@ public class MainManagedBean extends GenericManagedBean
 	{
 		iSecurityService = SpringUtil.getSpringBean("iSecurityService");
 		employeeDTO = iSecurityService.getUser().getEmployeeDTO();
-		
+
 	}
 
 	public ISecurityService getiSecurityService()

@@ -4,11 +4,12 @@
 		<name>Cristhian</name>
 		<lastName>Paraguay</lastName>
 		<maidenName>Huincho</maidenName>
+		<address>Santa Anita, Lima, Peru</address>
 		<description>Desarrollador java</description>
 		<profile>Estudiante de la carrera de Computación e Informática con
 			habilidades de trabajo en equipo, innovador y con deseos de
 			superación e interés en desarrollarse en áreas como programación web,
-			móvil. Me motiva leer, investigar tecnologias web y hacer deportes
+			móvil.
 		</profile>
 		<email>cristhianp00@gmail.com</email>
 		<phone>013628951</phone>
@@ -33,16 +34,23 @@
 		<interestDTOs>
 			<com.daloz.mycv.domain.InterestDTO>
 				<name>Anime</name>
-				<description>Me gusta los animes</description>
+				<description>Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes </description>
 			</com.daloz.mycv.domain.InterestDTO>
 			<com.daloz.mycv.domain.InterestDTO>
 				<name>Musica</name>
-				<description>Me gusta los animes</description>
+				<description>Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes </description>
 			</com.daloz.mycv.domain.InterestDTO>
+			<com.daloz.mycv.domain.InterestDTO>
+				<name>Juegos</name>
+				<description>Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes </description>
+			</com.daloz.mycv.domain.InterestDTO>
+			<com.daloz.mycv.domain.InterestDTO>
+				<name>Libros</name>
+<description>Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes Me gusta los animes </description>			</com.daloz.mycv.domain.InterestDTO>
 		</interestDTOs>
 		<socialNetworkDTOs>
 			<com.daloz.mycv.domain.SocialNetworkDTO>
-				<link>https://www.facebook.com/girard.santos</link>
+				<link>https://www.facebook.com/cristhianp00</link>
 				<path>/icon/fb-icon.png</path>
 			</com.daloz.mycv.domain.SocialNetworkDTO>
 			<com.daloz.mycv.domain.SocialNetworkDTO>
@@ -52,13 +60,51 @@
 		</socialNetworkDTOs>
 		<courseDTOs>
 			<com.daloz.mycv.domain.CourseDTO>
-				<name>Spring</name>
-				<descripcion>Aprender a manejar</descripcion>
+				<name>Spring MVC Experto</name>
+				<educacionalCenter>Codigo Facilito</educacionalCenter>
+				<descripcion>Aprender a manejarAprender a manejar Aprender a manejar Aprender a manejar
+                             Aprender a manejar Aprender a manejar Aprender.
+				</descripcion>
 				<location>Lima - Peru</location>
 				<starDate>2016-05-17 20:01:59.366 UTC</starDate>
 				<endDate>2016-05-17 20:01:59.366 UTC</endDate>
 				<contents>
-					<string>-Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+				</contents>
+			</com.daloz.mycv.domain.CourseDTO>
+			<com.daloz.mycv.domain.CourseDTO>
+				<name>Spring MVC Experto</name>
+				<educacionalCenter>Codigo Facilito</educacionalCenter>
+				<descripcion>Aprender a manejarAprender a manejar Aprender a manejar Aprender a manejar
+                             Aprender a manejar Aprender a manejar Aprender.
+				</descripcion>
+				<location>Lima - Peru</location>
+				<starDate>2016-05-17 20:01:59.366 UTC</starDate>
+				<endDate>2016-05-17 20:01:59.366 UTC</endDate>
+				<contents>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
+					<string>- Spring</string>
 				</contents>
 			</com.daloz.mycv.domain.CourseDTO>
 		</courseDTOs>
@@ -68,7 +114,27 @@
 				<endDate>2016-05-17 20:01:59.371 UTC</endDate>
 				<companyName>GORA SAC</companyName>
 				<position>Consultor junior</position>
-				<description>No se que hacia</description>
+				<description>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</description>			</com.daloz.mycv.domain.WorkExperienceDTO>
+			<com.daloz.mycv.domain.WorkExperienceDTO>
+				<startDate>2016-05-17 20:01:59.371 UTC</startDate>
+				<endDate>2016-05-17 20:01:59.371 UTC</endDate>
+				<companyName>GORA SAC</companyName>
+				<position>Consultor junior</position>
+				<description>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</description>			</com.daloz.mycv.domain.WorkExperienceDTO>
+
+			<com.daloz.mycv.domain.WorkExperienceDTO>
+				<startDate>2016-05-17 20:01:59.371 UTC</startDate>
+				<endDate>2016-05-17 20:01:59.371 UTC</endDate>
+				<companyName>GORA SAC</companyName>
+				<position>Consultor junior</position>
+				<description>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</description>			</com.daloz.mycv.domain.WorkExperienceDTO>
+
+			<com.daloz.mycv.domain.WorkExperienceDTO>
+				<startDate>2016-05-17 20:01:59.371 UTC</startDate>
+				<endDate>2016-05-17 20:01:59.371 UTC</endDate>
+				<companyName>GORA SAC</companyName>
+				<position>Consultor junior</position>
+				<description>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</description>
 			</com.daloz.mycv.domain.WorkExperienceDTO>
 		</workExperienceDTOs>
 		<skillDTO>
@@ -92,79 +158,79 @@
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>Java EE</name>
 					<level>Avanzado</level>
-					<valueRating>7</valueRating>
+					<valueRating>70</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>Java Android</name>
 					<level>Avanzado</level>
-					<valueRating>7</valueRating>
+					<valueRating>70</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>Ruby</name>
 					<level>Basico</level>
-					<valueRating>2</valueRating>
+					<valueRating>20</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>Html 5</name>
 					<level>Avanzado</level>
-					<valueRating>7</valueRating>
+					<valueRating>90</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>JavaScript 5</name>
 					<level>Avanzado</level>
-					<valueRating>5</valueRating>
+					<valueRating>50</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 				<com.daloz.mycv.domain.LanguajeDTO>
 					<name>Css</name>
 					<level>Basico</level>
-					<valueRating>3</valueRating>
+					<valueRating>80</valueRating>
 				</com.daloz.mycv.domain.LanguajeDTO>
 			</LanguajeDTOs>
 			<toolDTOs>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>Eclipse EE Mars</name>
 					<level>Avanzado</level>
-					<valueRating>7</valueRating>
+					<valueRating>80</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>Android Studio</name>
 					<level>Basico</level>
-					<valueRating>7</valueRating>
+					<valueRating>70</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>NetBeans</name>
 					<level>Basico</level>
-					<valueRating>2</valueRating>
+					<valueRating>40</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>IReport</name>
 					<level>Basico</level>
-					<valueRating>7</valueRating>
+					<valueRating>70</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>Maven</name>
 					<level>Avanzado</level>
-					<valueRating>5</valueRating>
+					<valueRating>50</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>Git</name>
 					<level>Basico</level>
-					<valueRating>3</valueRating>
+					<valueRating>50</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>GitHub</name>
 					<level>Basico</level>
-					<valueRating>3</valueRating>
+					<valueRating>50</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>JUnit</name>
 					<level>Basico</level>
-					<valueRating>3</valueRating>
+					<valueRating>40</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 				<com.daloz.mycv.domain.ToolDTO>
 					<name>Log4j</name>
 					<level>Basico</level>
-					<valueRating>3</valueRating>
+					<valueRating>55</valueRating>
 				</com.daloz.mycv.domain.ToolDTO>
 			</toolDTOs>
 			<frameworkDTOs>
@@ -234,7 +300,6 @@
 		</skillDTO>
 	</employeeDTO>
 	<name>cparaguay</name>
-	<password>PJkJr+wlNU1VHa4hWQuybjjVPyFzuNPcPu5MBH56scHri4UQPjvnumE7MbtcnDYhTcnxSkL9ei/bhIVrylxEwg==
-	</password>
+	<password>PJkJr+wlNU1VHa4hWQuybjjVPyFzuNPcPu5MBH56scHri4UQPjvnumE7MbtcnDYhTcnxSkL9ei/bhIVrylxEwg==</password>
 	<status>true</status>
 </UserDTO>

@@ -43,11 +43,11 @@
 				<!-- Profile info -->
 				<div id="profile_info">
 					<hgroup>
-					<h1 id="name" class="transition-02">#{mainManagedBean.employeeDTO.fullName}</h1>
+					<h1 id="name" class="transition-02">#{mainManagedBean.employeeDTO.name} #{mainManagedBean.employeeDTO.lastName}</h1>
 					</hgroup>
 					<h4 class="line">#{mainManagedBean.employeeDTO.description}</h4>
 					<h6>
-						<span class="fa fa-map-marker"></span> San Francisco , CA
+						<span class="fa fa-map-marker"></span> #{mainManagedBean.employeeDTO.address}
 					</h6>
 				</div>
 				<!-- End Profile info -->
@@ -65,11 +65,13 @@
 				<!-- Name -->
 				<div id="profile_social">
 					<h6>Mis Redes Sociales</h6>
-					<a href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[0].link}" target="_blank"><i class="fa fa-facebook"></i></a> <a href="#"><i
-						class="fa fa-twitter"></i></a> <a href="#"><i
-						class="fa fa-linkedin"></i></a> <a href="#"><i
-						class="fa fa fa-dribbble"></i></a> <a href="#"><i
-						class="fa fa-foursquare"></i></a>
+					
+					<div style="margin-left: 75px;">
+					<a href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[0].link}" target="_blank"><i class="fa fa-facebook"></i></a> 
+					<a href="#{mainManagedBean.employeeDTO.socialNetworkDTOs[1].link}" target="_blank"><i class="fa fa-linkedin"></i></a> 
+					
+					</div>
+						
 					<div class="clear"></div>
 				</div>
 				<!-- End Name -->

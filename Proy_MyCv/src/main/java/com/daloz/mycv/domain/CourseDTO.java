@@ -9,7 +9,7 @@ import com.daloz.mycv.domain.helper.ITextMutableObject;
 
 public class CourseDTO implements Serializable, ITextMutableObject
 {
-	private String name, descripcion, location;
+	private String name, educacionalCenter, descripcion, location;
 	private Date starDate, endDate;
 	private List<String> contents = new ArrayList<>();
 
@@ -76,6 +76,18 @@ public class CourseDTO implements Serializable, ITextMutableObject
 	public void setContents(List<String> contents)
 	{
 		this.contents = contents;
+	}
+	
+	
+
+	public String getEducacionalCenter()
+	{
+		return educacionalCenter;
+	}
+
+	public void setEducacionalCenter(String educacionalCenter)
+	{
+		this.educacionalCenter = educacionalCenter;
 	}
 
 	@Override
