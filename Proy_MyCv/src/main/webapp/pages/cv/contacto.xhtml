@@ -17,20 +17,21 @@
 															<!--<h3 class="main-heading"><span>Contact info</span></h3>-->
 
 															<div class="title_content" style="float: none;">
-																<div class="text_content">Contact info</div>
+																<div class="text_content">Informacion de Contacto</div>
 																<div class="clear"></div>
 															</div>
 
 															<ul>
 																<li><span class="span-info"><i
-																		class="glyphicon glyphicon-map-marker"></i> Adress:</span>
-																	San Francisco , CA.<br /> <br /></li>
+																		class="glyphicon glyphicon-map-marker"></i> Direccion:</span>
+																	#{mainManagedBean.employeeDTO.address}<br /> <br /></li>
 																<li><span class="span-info"><i
 																		class="glyphicon glyphicon-envelope"></i> Email:</span>
-																	brown.smith@gmail.com</li>
+																	#{mainManagedBean.employeeDTO.email}</li>
 																<li><span class="span-info"><i
-																		class="glyphicon glyphicon-phone"></i> Phone:</span> +123 456
-																	789 111</li>
+																		class="glyphicon glyphicon-phone"></i> Phone:</span>
+																	#{mainManagedBean.employeeDTO.cellPhone}
+																		</li>
 																<li><span class="span-info"><i
 																		class="glyphicon glyphicon-globe"></i> Website:</span>
 																	www.brown-smith.com</li>
@@ -87,19 +88,19 @@
 
 															<form action="" id="contactform">
 																<p class="form-group" id="contact-name">
-																	<label for="name">Your Name</label> <input type="text"
+																	<label for="name">Tu Nombre</label> <input type="text"
 																		name="name" class="form-control name-contact"
 																		id="inputSuccess" placeholder="Name..." />
 																</p>
 																<p class="form-group" id="contact-email">
-																	<label for="email">Your Email</label> <input
+																	<label for="email">Tu Email</label> <input
 																		type="text" name="email"
 																		class="form-control email-contact" id="inputSuccess"
 																		placeholder="Email..." />
 																</p>
 
 																<p class="form-group" id="contact-message">
-																	<label for="message">Your Message</label>
+																	<label for="message">Tu Mensaje</label>
 																	<textarea name="message" cols="88" rows="6"
 																		class="form-control message-contact" id="inputError"
 																		placeholder="Message..."></textarea>
@@ -112,7 +113,7 @@
 																	style="display: inline-block;">
 																<button class="ladda-button submit send_email"
 																	name="submit" data-color="green"
-																	data-style="expand-left">SEND MESSAGE</button>
+																	data-style="expand-left">Enviar Mensaje</button>
 																</section>
 
 															</form>
