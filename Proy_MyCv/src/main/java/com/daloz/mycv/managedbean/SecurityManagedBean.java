@@ -32,7 +32,6 @@ public class SecurityManagedBean extends GenericManagedBean
 
 	public String validateLogin()
 	{
-
 		userDTO.setPassword(encriptPassword(userDTO.getPassword(), SHA_512));
 		UserDTO userValidate = iSecurityService.validateUser(userDTO);
 
