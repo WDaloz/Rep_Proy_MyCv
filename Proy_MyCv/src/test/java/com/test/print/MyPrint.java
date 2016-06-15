@@ -1,6 +1,5 @@
 package com.test.print;
 
-import static org.junit.Assert.*;
 
 import java.awt.Desktop;
 import java.io.File;

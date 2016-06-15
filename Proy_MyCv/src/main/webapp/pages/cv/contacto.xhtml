@@ -92,15 +92,15 @@
 							<p class="form-group" id="contact-name">
 								<label for="name">Tu Nombre</label> 
 								<h:inputText
+								    value="#{mainManagedBean.name}"
 								    type="text"
 									name="name" class="form-control name-contact" 
 									placeholder="Nombre..." />
 							</p>
 							<p class="form-group" id="contact-email">
 								<label for="email">Tu Email</label> 
-								<INPUT type="text" required="required" />
 								<h:inputText 
-								    a:required="requerid"
+								    value="#{mainManagedBean.email}"
 								    type="text"
 									name="email" class="form-control email-contact"
 									id="inputSuccess" placeholder="Email..." />
@@ -133,11 +133,8 @@
 							</h:commandButton>
 							</section>
 							
-<!-- 							<section class="button-demo" style="display: inline-block;"> -->
-<!-- 								<button class="ladda-button submit send_email" name="submit" -->
-<!-- 									data-color="green" data-style="expand-left">Enviar -->
-<!-- 									Mensaje</button> -->
-<!-- 							</section> -->
+							<div class="g-recaptcha" data-sitekey="6LfvORoTAAAAAHiF6Z6zLHOqBZWz7TJaDa_EoEiJ"></div>
+							
 
 						</h:form>
 					</div>

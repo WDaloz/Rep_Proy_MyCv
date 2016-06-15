@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import com.daloz.mycv.domain.helper.ITextMutableObject;
 
+@SuppressWarnings("serial")
 public class DataBaseDTO implements Serializable, ITextMutableObject
 {
 	private String name, level;

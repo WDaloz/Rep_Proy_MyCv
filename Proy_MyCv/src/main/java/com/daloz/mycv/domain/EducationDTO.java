@@ -5,6 +5,7 @@ import java.util.Date;
 
 import com.daloz.mycv.domain.helper.ITextMutableObject;
 
+@SuppressWarnings("serial")
 public class EducationDTO implements Serializable, ITextMutableObject
 {
 	private Date startDate, endDate;
