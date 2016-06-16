@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:f="http://java.sun.com/jsf/core" 
-      xmlns:h="http://java.sun.com/jsf/html"
-      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
 <!-- .contact -->
 <div id="contact" class="content_2">
 
@@ -88,53 +88,50 @@
 
 						<div id="contact-status"></div>
 
-						<h:form>
+						<h:form id="frmContacto">
 							<p class="form-group" id="contact-name">
-								<label for="name">Tu Nombre</label> 
-								<h:inputText
-								    value="#{mainManagedBean.name}"
-								    type="text"
-									name="name" class="form-control name-contact" 
+								<label for="name">Tu Nombre</label>
+								<h:inputText id="txtName" value="#{mainManagedBean.name}"
+									type="text" name="name" class="form-control name-contact"
 									placeholder="Nombre..." />
 							</p>
+
 							<p class="form-group" id="contact-email">
-								<label for="email">Tu Email</label> 
-								<h:inputText 
-								    value="#{mainManagedBean.email}"
-								    type="text"
-									name="email" class="form-control email-contact"
-									id="inputSuccess" placeholder="Email..." />
+								<label for="email">Tu Email</label>
+								<h:inputText value="#{mainManagedBean.email}" type="text"
+									name="email" class="form-control email-contact" id="txtEmail"
+									placeholder="Email..." />
 							</p>
 
 							<p class="form-group" id="contact-message">
 								<label for="message">Tu Mensaje</label>
-								<h:inputTextarea 
-								    a:required="requerid"
-								    id="txtMessage"
-								    value="#{mainManagedBean.message}"
-								    name="message" cols="88" rows="6"
-									class="form-control message-contact" 
-									placeholder="Mensaje..."/>
+								<h:inputTextarea a:required="requerid" id="txtMessage"
+									value="#{mainManagedBean.message}" name="message" cols="88"
+									rows="6" class="form-control message-contact"
+									placeholder="Mensaje..." />
 							</p>
+
 							<input type="reset" name="reset" value="CLEAR" class="reset" />
-							<!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
-							
+
 							<section class="button-demo" style="display: inline-block;">
 
-							<h:commandButton 
-							action="#{mainManagedBean.sendMessage}"
-							class="ladda-button submit send_email" 
-							data-color="green" 
-							data-style="expand-left" 
-							value="Enviar">
-							
-							<f:ajax execute="@form" render="@form"/>
-							
-							</h:commandButton>
+								<h:commandButton actionListener="#{mainManagedBean.sendMessage}"
+									class="ladda-button submit send_email" data-color="green"
+									data-style="expand-left" value="Enviar">
+
+
+									<f:ajax execute="@form" onevent="saludo"/>
+
+								</h:commandButton>
 							</section>
+
 							
-							<div class="g-recaptcha" data-sitekey="6LfvORoTAAAAAHiF6Z6zLHOqBZWz7TJaDa_EoEiJ"></div>
-							
+
+
+
+							<div id="divRecap" class="g-recaptcha"
+								data-sitekey="6LfvORoTAAAAAHiF6Z6zLHOqBZWz7TJaDa_EoEiJ"></div>
+
 
 						</h:form>
 					</div>

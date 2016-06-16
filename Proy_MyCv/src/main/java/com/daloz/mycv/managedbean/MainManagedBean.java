@@ -1,13 +1,21 @@
 package com.daloz.mycv.managedbean;
 
+
+
+import java.io.IOException;
+
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.SessionScoped;
-
+import javax.faces.context.FacesContext;
 
 import com.daloz.mycv.domain.EmployeeDTO;
+import com.daloz.mycv.managedbean.helper.RecapchaGoogle;
 import com.daloz.mycv.managedbean.helper.SpringUtil;
 import com.daloz.mycv.service.ISecurityService;
+
+
 
 
 @ManagedBean
@@ -17,6 +25,7 @@ public class MainManagedBean extends GenericManagedBean
 	private ISecurityService iSecurityService;
 	private EmployeeDTO employeeDTO = new EmployeeDTO();
 	private String name, email, message;
+	
 
 	@PostConstruct
 	public void init()
@@ -26,9 +35,16 @@ public class MainManagedBean extends GenericManagedBean
 
 	}
 
-	public void sendMessage()
+	
+	public void sendMessage() throws IOException
 	{
-		sendEmail(name, email, message);
+		
+		if(RecapchaGoogle.validateRecaptcha(getRequest().getParameter("g-recaptcha-response")))
+		{
+			 sendEmail(name, email, message);
+			
+		}
+		
 	}
 	
 
@@ -81,7 +97,7 @@ public class MainManagedBean extends GenericManagedBean
 	{
 		this.email = email;
 	}
-	
-	
 
+
+	
 }

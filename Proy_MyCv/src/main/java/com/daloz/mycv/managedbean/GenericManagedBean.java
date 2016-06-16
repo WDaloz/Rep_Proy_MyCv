@@ -3,6 +3,7 @@ package com.daloz.mycv.managedbean;
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
@@ -44,6 +45,12 @@ public class GenericManagedBean
 
 		return object;
 	}
+	
+	
+	public HttpServletRequest getRequest()
+	{
+		return (HttpServletRequest) FacesContext.getCurrentInstance().getExternalContext().getRequest();
+	}
 
 	public void removeAttributeSession(String name)
 	{
@@ -64,6 +71,10 @@ public class GenericManagedBean
 	{
 		logger = Logger.getLogger(clazz);
 	}
+	
+	
+	
+	
 	
 	public void sendEmail(String name, String email, String message)
 	{
@@ -91,5 +102,8 @@ public class GenericManagedBean
 		iMailManager.sendMail(eMail);
 
 	}
+	
+	
+	
 
 }

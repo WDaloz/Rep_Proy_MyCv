@@ -5,7 +5,6 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.component.UIComponent;
 
-
 import com.daloz.mycv.domain.UserDTO;
 import static com.daloz.mycv.managedbean.helper.EncryptingString.*;
 import static com.daloz.mycv.managedbean.helper.HashTypes.*;
@@ -75,5 +74,7 @@ public class SecurityManagedBean extends GenericManagedBean
 	{
 		this.btnLogin = btnLogin;
 	}
+	
+	
 
 }
